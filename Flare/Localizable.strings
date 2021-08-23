@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Flare
+
+  Created by Steven Troughton-Smith on 23/08/2021.
+  Copyright © 2021 High Caffeine Content. All rights reserved.
+*/
+
+"ADDRESS_BAR_PLACEHOLDER" = "Enter website name";
+"PAGE_TITLE_BLANK" = "Untitled";
+
+"MENU_FILE_NEW_WINDOW" = "New Window";
+"MENU_FILE_NEW_TAB" = "New Tab";
+
+"MENU_HISTORY" = "History";
+"MENU_HISTORY_CLEAR" = "Clear History";
+"MENU_HISTORY_EMPTY" = "No History";
+
+"MENU_HISTORY_BACK" = "Back";
+"MENU_HISTORY_FORWARD" = "Forward";
+"MENU_HISTORY_HOME" = "Home";
+
