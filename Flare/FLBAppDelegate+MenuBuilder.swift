@@ -80,7 +80,10 @@ extension FLBAppDelegate {
 	
 	@objc func newWindow(_ sender:Any) {
 		let options = UIScene.ActivationRequestOptions()
+		
+		#if targetEnvironment(macCatalyst)
 		options.collectionJoinBehavior = .disallowed
+		#endif
 		
 		UIApplication.shared.requestSceneSessionActivation(nil, userActivity: nil, options: options, errorHandler: nil)
 	}

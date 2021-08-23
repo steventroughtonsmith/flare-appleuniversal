@@ -87,19 +87,24 @@ extension FLBBrowserSceneDelegate: NSToolbarDelegate {
 
 			return addressFieldItem
 		case .navigation:
-			let item = NSToolbarItemGroup(itemIdentifier: itemIdentifier, images: [UIImage(systemName: "chevron.left")!, UIImage(systemName: "chevron.right")!], selectionMode: .momentary, labels: nil, target: nil, action: NSSelectorFromString("goNavigate:"))
+			let item = NSToolbarItemGroup(itemIdentifier: itemIdentifier, images: [UIImage(systemName: "chevron.left")!, UIImage(systemName: "chevron.right")!], selectionMode: .momentary, labels: [NSLocalizedString("TOOLBAR_BACK", comment: ""), NSLocalizedString("TOOLBAR_FORWARD", comment: "")], target: nil, action: NSSelectorFromString("goNavigate:"))
+			item.visibilityPriority = .high
 			return item
 		case .home:
 			let item = NSToolbarItemGroup(itemIdentifier: itemIdentifier, images: [UIImage(systemName: "house")!], selectionMode: .momentary, labels: nil, target: nil, action: NSSelectorFromString("goHome:"))
+			item.visibilityPriority = .low
 			return item
 		case .reload:
 			let item = NSToolbarItemGroup(itemIdentifier: itemIdentifier, images: [UIImage(systemName: "arrow.clockwise")!], selectionMode: .momentary, labels: nil, target: nil, action: NSSelectorFromString("reload:"))
+			item.visibilityPriority = .low
 			return item
 		case .newTab:
 			let item = NSToolbarItemGroup(itemIdentifier: itemIdentifier, images: [UIImage(systemName: "plus")!], selectionMode: .momentary, labels: nil, target: nil, action: NSSelectorFromString("newWindowForTab:"))
+			item.visibilityPriority = .low
 			return item
 		case .showTabs:
 			let item = NSToolbarItemGroup(itemIdentifier: itemIdentifier, images: [UIImage(systemName: "square.on.square")!], selectionMode: .momentary, labels: nil, target: nil, action: NSSelectorFromString("toggleTabOverview:"))
+			item.visibilityPriority = .low
 			return item
 		default:
 			break

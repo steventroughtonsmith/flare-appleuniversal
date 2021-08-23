@@ -7,6 +7,10 @@
 */
 
 "ADDRESS_BAR_PLACEHOLDER" = "Enter website name";
+
+"TOOLBAR_BACK" = "Back";
+"TOOLBAR_FORWARD" = "Forward";
+
 "PAGE_TITLE_BLANK" = "Untitled";
 
 "MENU_FILE_NEW_WINDOW" = "New Window";

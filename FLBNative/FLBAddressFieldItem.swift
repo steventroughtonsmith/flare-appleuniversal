@@ -19,8 +19,11 @@ class FLBAddressFieldItem: NSToolbarItem, NSTextFieldDelegate {
 		textField.placeholderString = NSLocalizedString("ADDRESS_BAR_PLACEHOLDER", comment: "")
 		textField.stringValue = ""
 		textField.delegate = self
+		textField.lineBreakMode = .byClipping
 		
 		self.view = textField
+		
+		visibilityPriority = .high
 	}
 	
 	@objc func setAddress(_ string:String) {

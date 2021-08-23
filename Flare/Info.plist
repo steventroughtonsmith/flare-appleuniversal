@@ -37,7 +37,7 @@
 			<array>
 				<dict>
 					<key>UISceneConfigurationName</key>
-					<string>Browser</string>
+					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).FLBBrowserSceneDelegate</string>
 				</dict>

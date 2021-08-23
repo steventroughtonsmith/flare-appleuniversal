@@ -46,7 +46,7 @@ class FLBAddressFieldCell: NSTextFieldCell {
 		if let textField = controlView as? NSTextField {
 			
 			if textField.currentEditor() == nil {
-				let imageRegionSize = CGFloat(16)
+				let imageRegionSize = CGFloat(13)
 				let imageSize = CGFloat(8)
 				let imageOffset = CGPoint(x: 6, y: (cellFrame.height/2-imageSize))
 				let extraTextPadding = CGFloat(2)
