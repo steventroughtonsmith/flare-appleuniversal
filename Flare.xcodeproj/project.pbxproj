@@ -117,6 +117,7 @@
 				B0F7D34826D40B4B00C2BAA4 /* Number+Scaling.swift */,
 				B02B2BE126D3F74000256F1D /* FLBAppDelegate.swift */,
 				B0F7D34226D4029100C2BAA4 /* FLBAppDelegate+MenuBuilder.swift */,
+				B0E6020526D473FD00E7BA89 /* Controllers */,
 				B0F7D32D26D3FEA000C2BAA4 /* Browser Scene */,
 				B02B2BE726D3F74100256F1D /* Assets.xcassets */,
 				B02B2BEC26D3F74100256F1D /* LaunchScreen.storyboard */,
@@ -126,15 +127,22 @@
 			path = Flare;
 			sourceTree = "<group>";
 		};
+		B0E6020526D473FD00E7BA89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7D34426D4060400C2BAA4 /* FLBAddressSanitizer.swift */,
+				B0F7D34626D407B400C2BAA4 /* FLBBrowserRelay.swift */,
+				B043DCA526D4160600C281C5 /* FLBHistoryController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B0F7D32D26D3FEA000C2BAA4 /* Browser Scene */ = {
 			isa = PBXGroup;
 			children = (
 				B02B2BE326D3F74000256F1D /* FLBBrowserSceneDelegate.swift */,
 				B0F7D32B26D3F9AF00C2BAA4 /* FLBBrowserSceneDelegate+NSToolbar.swift */,
 				B0F7D32926D3F84800C2BAA4 /* FLBWebViewController.swift */,
-				B0F7D34426D4060400C2BAA4 /* FLBAddressSanitizer.swift */,
-				B0F7D34626D407B400C2BAA4 /* FLBBrowserRelay.swift */,
-				B043DCA526D4160600C281C5 /* FLBHistoryController.swift */,
 			);
 			path = "Browser Scene";
 			sourceTree = "<group>";
@@ -438,7 +446,6 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Flare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +470,6 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Flare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

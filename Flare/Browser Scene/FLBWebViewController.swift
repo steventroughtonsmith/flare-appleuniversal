@@ -28,9 +28,13 @@ class FLBWebViewController: UIViewController, WKNavigationDelegate {
 		webView.frame = view.bounds.inset(by: view.safeAreaInsets)
 	}
 	
+	// MARK: -
+	
 	func resumeAddress(_ address:String) {
 		webView.load(URLRequest(url: FLBAddressSanitizer.sanitizedAddressWithInput(address)))
 	}
+	
+	// MARK: - Actions
 	
 	@objc func goAddress(_ sender:NSObject) {
 		if let string = sender.value(forKey: "stringValue") as? String {
@@ -71,7 +75,7 @@ class FLBWebViewController: UIViewController, WKNavigationDelegate {
 		webView.reload()
 	}
 	
-	// MARK: -
+	// MARK: - Web Navigation Delegate
 	
 	func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
 		guard let relay = relay else { return }

@@ -28,7 +28,6 @@ extension NSToolbarItem {
 
 extension FLBBrowserSceneDelegate: NSToolbarDelegate {
 	
-
 	func buildMacToolbar() {
 		if let windowScene = window?.windowScene {
 			
@@ -69,7 +68,6 @@ extension FLBBrowserSceneDelegate: NSToolbarDelegate {
 	func items() -> [NSToolbarItem.Identifier] {
 		return [.navigation, .flexibleSpace, .home, .reload, .flexibleSpace, .addressBar, .flexibleSpace, .newTab, .showTabs]
 	}
-		
 	
 	func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
 		return items()
@@ -77,7 +75,6 @@ extension FLBBrowserSceneDelegate: NSToolbarDelegate {
 	
 	func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
 		return items()
-
 	}
 	
 	func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
@@ -109,6 +106,7 @@ extension FLBBrowserSceneDelegate: NSToolbarDelegate {
 		default:
 			break
 		}
+		
 		return NSToolbarItem(itemIdentifier: itemIdentifier)
 	}
 }
